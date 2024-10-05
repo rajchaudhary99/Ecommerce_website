@@ -1,2 +1,2 @@
 # Ecommerce_website
-#thanku for visiting....
+
