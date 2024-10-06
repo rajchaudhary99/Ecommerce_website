@@ -329,10 +329,7 @@ input{
 }
 @media(min-width: 576px){
   /*  Global  */
-  h1{
-    font-size: 2em;
-  }
-  
+ 
   /*  Hero Section  */
   .hero{
     background-image: none;
@@ -566,3 +563,403 @@ input{
     margin: 0;
   }
 }
+/* Keyframes for glowing pulse animation */
+@keyframes pulse-glow {
+  0% {
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+      transform: scale(1);
+  }
+  50% {
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.5);
+      transform: scale(1.05);
+  }
+  100% {
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.4);
+      transform: scale(1);
+  }
+}
+
+/* Apply the animation to buttons */
+.btn {
+  animation: pulse-glow 1.5s infinite;
+  transition: all 0.3s ease-in-out;
+}
+/* Keyframes for parallax zoom and slight rotation */
+@keyframes parallax-scale {
+  0% {
+      transform: scale(1.05) rotate(0deg);
+      filter: brightness(1);
+  }
+  50% {
+      transform: scale(1.08) rotate(2deg);
+      filter: brightness(1.1);
+  }
+  100% {
+      transform: scale(1.05) rotate(0deg);
+      filter: brightness(1);
+  }
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(135deg, #ffe9ef, #f5d9d6);
+  padding: 3em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #090b08;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.2); /* Deep shadow for 3D lift */
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+}
+
+footer h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #090b08;
+}
+
+footer p, footer a {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff6b81;
+}
+
+/* Social Media Icons Styling */
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-icons a {
+  color: #090b08;
+  font-size: 1.5em;
+  margin-right: 0.8em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #ff6b81;
+  transform: translateY(-4px) rotate(3deg);
+}
+
+/* Footer Divider */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+  margin: 1.5em 0;
+  opacity: 0.5;
+}
+
+/* Footer Copyright Styling */
+.footer-copyright {
+  font-size: 0.8em;
+  text-align: center;
+  color: #090b08;
+  margin-top: 1em;
+}
+
+/* Hover Animation for Links */
+footer p:hover, footer a:hover {
+  color: #ff6b81;
+  transform: translateY(-2px);
+}
+
+/* Responsive Footer Layout */
+@media (min-width: 768px) {
+  footer {
+      padding: 3em 4em;
+      justify-content: space-around;
+  }
+}
+.btn {
+  background: linear-gradient(135deg, #ff6b81, #ff9f9f);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Add shadow for 3D effect */
+}
+
+.btn:hover {
+  transform: translateY(-6px) scale(1.05); /* Lift and scale effect */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}
+.box {
+  position: relative;
+  padding: 2em;
+  background-color: #f5d9d6;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: translateY(-8px) scale(1.03); /* Raise slightly and scale */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.box-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transform: translate(8px, 8px); /* Subtle 3D effect */
+  transition: transform 0.6s ease;
+}
+
+.box:hover .box-overlay {
+  transform: translate(0px, 0px) scale(0.95);
+}
+.icon {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #090b08;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-4px) scale(1.1); /* Pop-out effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.image {
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Initial 3D shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: translateY(-5px) scale(1.05); /* Enlarge on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+.title h2 {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: linear-gradient(to right, #ff6b81, #ff9f9f);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.title h2:hover {
+  transform: translateY(-4px) scale(1.03); /* Slightly lift on hover */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+/* Background Floating Shapes */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.float-shape {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff9f9f, #ff6b81);
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: float 6s ease-in-out infinite;
+}
+/* Contact Section */
+section#contact {
+  padding: 3em 2em .5em;
+  background-color: #f5d9d6; /* Soft background for contrast */
+}
+
+/* Contact Form Wrapper */
+.form-wrapper {
+  max-width: 600px;
+  margin: 3em auto;
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* 3D Shadow */
+  transform: perspective(1px) translateZ(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-wrapper:hover {
+  transform: translateY(-6px); /* Slight lift on hover */
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Form Input Fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"] {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08); /* Subtle 3D depth */
+  background: #f9f9f9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  transform: translateY(-2px); /* Lift on focus */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  background: #ffffff;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff6b81, #ff9f9f);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: translateY(-4px); /* Hover lift */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow */
+  background: linear-gradient(135deg, #ff9f9f, #ff6b81);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  padding: 1em;
+  min-height: 120px;
+  resize: vertical;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Contact Wrapper */
+.contact-wrapper .wrapper {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contact-footer {
+  padding: 1em 0;
+  margin: 1em;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-footer:hover {
+  transform: translateY(-4px);
+  background-color: #f5d9d6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-wrapper .social-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.contact-wrapper .social-menu a {
+  font-size: 1.5em;
+  color: #090b08;
+  margin: 0 .5em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-wrapper .social-menu a:hover {
+  color: #ff6b81;
+  transform: scale(1.2); /* Scale on hover */
+}
+/* H1 Text Animation */
+h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff6b81;
+  background: linear-gradient(90deg, #453a3a, #9d7979,#584646);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 3s ease infinite, textPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes textPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+/* YouTube Video Wrapper */
+/* YouTube Video Wrapper with Floating and Pulsing Animation */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Floating and Pulsing */
+.video-wrapper:hover {
+  animation: float 2s ease-in-out infinite; /* Floating effect */
+}
+
+.video-wrapper:hover iframe {
+  transform: scale(1.05); /* Slightly zooms in */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Keyframes for Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* Floats up */
+  }
+}
+
