@@ -24,7 +24,8 @@
             <li><a class="nav-link" href="#featured">New in!</a></li>
             <li><a class="nav-link" href="#collections">Collections</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#contact">Contact Us</a></li>
+            <li><a class="nav-link" href="#review">Review</a></li>
           </ul>
           <ul class="social-menu">
             <li><a href="#" aria-label="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -103,6 +104,21 @@
       
       <!-- Contact Section -->
       <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+      <section id="contact">
         <div class="wrapper">
           <div class="form-wrapper">    
             <h4>Add More Beauty To Your Email</h4>
@@ -111,6 +127,7 @@
               <input type="submit" id="submit" value="OK" class="submit">
             </form>
           </div>
+          
           <div class="contact-wrapper">
             <h4>Stay In Touch With PIXEL</h4>
             <div class="wrapper">        
@@ -130,37 +147,133 @@
         </div>
       </section>
       <footer>
-    <div class="footer-content">
-        <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim, tortor nec consectetur.</p>
-    </div>
+        <div class="footer-content">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim, tortor nec consectetur.</p>
+      </div>
+      
+      <div class="footer-content">
+          <h4>Contact</h4>
+          <p><a href="mailto:info@example.com">info@example.com</a></p>
+          <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+      
+      <div class="footer-content">
+          <h4>Follow Us</h4>
+          <div class="footer-social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      <div class="float-shape" style="top: 20%; left: 10%;"></div>
+      <div class="float-shape" style="bottom: 15%; right: 20%;"></div>
+      <div class="float-shape" style="top: 50%; right: 5%;"></div>
+      
+      
+      <div class="footer-divider"></div>
+      
+      <div class="footer-copyright">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+      </footer>
+<!-------testimonial---->
+    
+<div class="rev-container">
+  <h2>Testimonial</h2>
+   <div class="review-container">
+   <h1> What our customer say</h1>
+   <div class="rating-container">
+       <span class="rating">4.5/5</span>
+       <span class="stars">
+         <span class="star" data-value="1">★</span>
+         <span class="star" data-value="2">★</span>
+         <span class="star" data-value="3">★</span>
+         <span class="star" data-value="4">★</span>
+         <span class="star" data-value="5">★</span>
+     
+       </span>
+       <span class="reviews">10 reviews</span>
+   </div>
+   <div class="reviews-container">
+       <!-- Review 1 -->
+       <div class="review-box">
+           <h4>JOHN DOE</h4>
+           <div class="review-content">
+               <span class="name">John Doe</span>
+               <span class="comment">"product are so affrodable "</span>
+               <div class="stars" id="stars">
+                 <span class="star" data-value="1">★</span>
+                 <span class="star" data-value="2">★</span>
+                 <span class="star" data-value="3">★</span>
+                 <span class="star" data-value="4">★</span>
+                 <span class="star" data-value="5">★</span>
+             
+             </div>
+           </div>
+       </div>
+       <!-- Review 2 -->
+       <div class="review-box">
+           <h4>JANE SMITH</h4>
+           <div class="review-content">
+               <span class="name">Jane Smith</span>
+               <span class="comment">" Highly recommend!"</span>
+               <div class="stars" id="stars">
+                 <span class="star" data-value="1">★</span>
+                 <span class="star" data-value="2">★</span>
+                 <span class="star" data-value="3">★</span>
+                 <span class="star" data-value="4">★</span>
+                 <span class="star" data-value="5">★</span>
+             
+             </div>
+           </div>
+       </div>
+       <!-- Review 3 -->
+       <div class="review-box">
+           <h4>JohnSon</h4>
+           <div class="review-content">
+               <span class="name"> JOHNSON</span>
+               <span class="comment">"products are very good quality "</span>
+               
+                 <div class="stars" id="stars">
+                   <span class="star" data-value="1">★</span>
+                   <span class="star" data-value="2">★</span>
+                   <span class="star" data-value="3">★</span>
+                   <span class="star" data-value="4">★</span>
+                   <span class="star" data-value="5">★</span>
+               
+               </div>
+           </div>
+       </div>
+   </div>
+   <!----review add-->
+   <div class="container-review">
+       <h1>Testimonial here</h1>
+       <div class="rating">
+           <span id="rating">0</span>/5
+       </div>
+       <div class="stars" id="stars">
+           <span class="star" data-value="1">★</span>
+           <span class="star" data-value="2">★</span>
+           <span class="star" data-value="3">★</span>
+           <span class="star" data-value="4">★</span>
+           <span class="star" data-value="5">★</span>
+       </div>
+       <p>Share your review:</p>
+       <textarea id="review"
+               placeholder="Write your review here">
+       </textarea>
+       <button id="submit">Submit</button>
+       <div class="reviews" id="reviews">
+       </div>
+   </div>
 
-    <div class="footer-content">
-        <h4>Contact</h4>
-        <p><a href="mailto:info@example.com">info@example.com</a></p>
-        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-    </div>
-
-    <div class="footer-content">
-        <h4>Follow Us</h4>
-        <div class="footer-social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </div>
-    <div class="float-shape" style="top: 20%; left: 10%;"></div>
-<div class="float-shape" style="bottom: 15%; right: 20%;"></div>
-<div class="float-shape" style="top: 50%; right: 5%;"></div>
-
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-copyright">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </div>
 </footer>
+<script src="script.js"></script> 
+  
+
+
 
 </body>
 </html>
